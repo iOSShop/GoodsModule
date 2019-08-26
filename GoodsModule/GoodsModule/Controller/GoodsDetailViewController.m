@@ -7,6 +7,7 @@
 //
 
 #import "GoodsDetailViewController.h"
+#import <OrderModule_Category/CCMediator+OrderModule.h>
 
 @interface GoodsDetailViewController ()
 @property (nonatomic, strong) UILabel *textLabel;
@@ -18,12 +19,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"商品详情";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"购买" style:UIBarButtonItemStylePlain target:self action:@selector(clickBuy)];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.textLabel];
     
     self.textLabel.text = [NSString stringWithFormat:@"商品%@的详情", self.goodsID];
+}
+
+- (void)clickBuy {
+    __weak __typeof(self)weakSelf = self;
+    UIViewController *viewController = [[CCMediator sharedInstance] Order_viewControllerForMakeWithGoodsID:self.goodsID goodsCount:99 success:^(NSString * _Nonnull successString) {
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        strongSelf.textLabel.text = successString;
+    }];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)viewWillLayoutSubviews {

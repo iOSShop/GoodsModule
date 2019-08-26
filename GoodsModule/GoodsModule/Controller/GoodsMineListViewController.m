@@ -35,8 +35,8 @@
 }
 
 - (void)addLoginStatusObserve {
-    NSString *notification = [[CCMediator sharedInstance] Account_nameForLoginStatusChangeNotification];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:notification object:nil];
+    NSString *notificationName = [[CCMediator sharedInstance] Account_nameForLoginStatusChangeNotification];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStatusChange) name:notificationName object:nil];
 }
 
 - (void)clickLogin {

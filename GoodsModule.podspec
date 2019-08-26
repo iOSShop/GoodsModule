@@ -23,4 +23,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "AccountModule_Category"
+  s.dependency "OrderModule_Category"
+  
 end
