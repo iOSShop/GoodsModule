@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "GoodsMineListViewController.h"
 
 @interface ViewController ()
 
@@ -19,5 +20,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)clickButton:(id)sender {
+    GoodsMineListViewController *listViewController = [[GoodsMineListViewController alloc] init];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:listViewController] animated:YES completion:nil];
+}
 
 @end

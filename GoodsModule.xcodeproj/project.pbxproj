@@ -13,6 +13,11 @@
 		331D02CA2313643200A37CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 331D02C92313643200A37CF7 /* Assets.xcassets */; };
 		331D02CD2313643200A37CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331D02CB2313643200A37CF7 /* LaunchScreen.storyboard */; };
 		331D02D02313643200A37CF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D02CF2313643200A37CF7 /* main.m */; };
+		331D02DA2313652800A37CF7 /* GoodsMineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D02D92313652800A37CF7 /* GoodsMineListViewController.m */; };
+		331D02DD2313653A00A37CF7 /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D02DC2313653A00A37CF7 /* GoodsDetailViewController.m */; };
+		331D02E123136A9900A37CF7 /* GoodsLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D02E023136A9900A37CF7 /* GoodsLoginView.m */; };
+		33AF52E02313843500A92833 /* Target_Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AF52DF2313843500A92833 /* Target_Goods.m */; };
+		94D24D652D456BAFE6320C39 /* libPods-GoodsModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D71F87DE460AB2EF1A5E89E0 /* libPods-GoodsModule.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		331D02CC2313643200A37CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		331D02CE2313643200A37CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		331D02CF2313643200A37CF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		331D02D82313652800A37CF7 /* GoodsMineListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsMineListViewController.h; sourceTree = "<group>"; };
+		331D02D92313652800A37CF7 /* GoodsMineListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsMineListViewController.m; sourceTree = "<group>"; };
+		331D02DB2313653A00A37CF7 /* GoodsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsDetailViewController.h; sourceTree = "<group>"; };
+		331D02DC2313653A00A37CF7 /* GoodsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailViewController.m; sourceTree = "<group>"; };
+		331D02DF23136A9900A37CF7 /* GoodsLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsLoginView.h; sourceTree = "<group>"; };
+		331D02E023136A9900A37CF7 /* GoodsLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsLoginView.m; sourceTree = "<group>"; };
+		33AF52DE2313843500A92833 /* Target_Goods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Goods.h; sourceTree = "<group>"; };
+		33AF52DF2313843500A92833 /* Target_Goods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Goods.m; sourceTree = "<group>"; };
+		47E06E1B11D3BB232A9BFAA5 /* Pods-GoodsModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsModule.release.xcconfig"; path = "Target Support Files/Pods-GoodsModule/Pods-GoodsModule.release.xcconfig"; sourceTree = "<group>"; };
+		D71F87DE460AB2EF1A5E89E0 /* libPods-GoodsModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodsModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D9D60DF36DF0624574A122 /* Pods-GoodsModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsModule.debug.xcconfig"; path = "Target Support Files/Pods-GoodsModule/Pods-GoodsModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D24D652D456BAFE6320C39 /* libPods-GoodsModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				331D02BF2313643100A37CF7 /* GoodsModule */,
 				331D02BE2313643100A37CF7 /* Products */,
+				8078653E5F589A7B5715002D /* Pods */,
+				4DA29A3DBE39ED5D1A9B7C72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,9 @@
 		331D02BF2313643100A37CF7 /* GoodsModule */ = {
 			isa = PBXGroup;
 			children = (
+				331D02D72313649500A37CF7 /* Actions */,
+				331D02D62313649500A37CF7 /* Controller */,
+				331D02DE23136A7B00A37CF7 /* View */,
 				331D02C02313643100A37CF7 /* AppDelegate.h */,
 				331D02C12313643100A37CF7 /* AppDelegate.m */,
 				331D02C32313643100A37CF7 /* ViewController.h */,
@@ -71,6 +93,55 @@
 			path = GoodsModule;
 			sourceTree = "<group>";
 		};
+		331D02D62313649500A37CF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				331D02D82313652800A37CF7 /* GoodsMineListViewController.h */,
+				331D02D92313652800A37CF7 /* GoodsMineListViewController.m */,
+				331D02DB2313653A00A37CF7 /* GoodsDetailViewController.h */,
+				331D02DC2313653A00A37CF7 /* GoodsDetailViewController.m */,
+			);
+			name = Controller;
+			path = GoodsModule/Controller;
+			sourceTree = "<group>";
+		};
+		331D02D72313649500A37CF7 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				33AF52DE2313843500A92833 /* Target_Goods.h */,
+				33AF52DF2313843500A92833 /* Target_Goods.m */,
+			);
+			name = Actions;
+			path = GoodsModule/Actions;
+			sourceTree = "<group>";
+		};
+		331D02DE23136A7B00A37CF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				331D02DF23136A9900A37CF7 /* GoodsLoginView.h */,
+				331D02E023136A9900A37CF7 /* GoodsLoginView.m */,
+			);
+			name = View;
+			path = GoodsModule/View;
+			sourceTree = "<group>";
+		};
+		4DA29A3DBE39ED5D1A9B7C72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D71F87DE460AB2EF1A5E89E0 /* libPods-GoodsModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8078653E5F589A7B5715002D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9D9D60DF36DF0624574A122 /* Pods-GoodsModule.debug.xcconfig */,
+				47E06E1B11D3BB232A9BFAA5 /* Pods-GoodsModule.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +149,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 331D02D32313643200A37CF7 /* Build configuration list for PBXNativeTarget "GoodsModule" */;
 			buildPhases = (
+				FAEF65FF5476065B757B9B3F /* [CP] Check Pods Manifest.lock */,
 				331D02B92313643100A37CF7 /* Sources */,
 				331D02BA2313643100A37CF7 /* Frameworks */,
 				331D02BB2313643100A37CF7 /* Resources */,
@@ -136,14 +208,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FAEF65FF5476065B757B9B3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodsModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		331D02B92313643100A37CF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				331D02DA2313652800A37CF7 /* GoodsMineListViewController.m in Sources */,
 				331D02C52313643100A37CF7 /* ViewController.m in Sources */,
 				331D02D02313643200A37CF7 /* main.m in Sources */,
+				331D02E123136A9900A37CF7 /* GoodsLoginView.m in Sources */,
+				33AF52E02313843500A92833 /* Target_Goods.m in Sources */,
 				331D02C22313643100A37CF7 /* AppDelegate.m in Sources */,
+				331D02DD2313653A00A37CF7 /* GoodsDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +384,7 @@
 		};
 		331D02D42313643200A37CF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D9D60DF36DF0624574A122 /* Pods-GoodsModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +401,7 @@
 		};
 		331D02D52313643200A37CF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E06E1B11D3BB232A9BFAA5 /* Pods-GoodsModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

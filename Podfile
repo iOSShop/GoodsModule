@@ -5,5 +5,6 @@ source 'https://github.com/iOSShop/ModularizationPod.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'GoodsModule' do
-
+  pod 'AccountModule_Category', :source => 'https://github.com/iOSShop/ModularizationPod.git'
+  pod 'AccountModule', :source => 'https://github.com/iOSShop/ModularizationPod.git'
 end
