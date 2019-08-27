@@ -32,6 +32,8 @@
     [self.view addSubview:self.loginView];
     
     [self addLoginStatusObserve];
+    
+    [self loginStatusChange];
 }
 
 - (void)addLoginStatusObserve {
